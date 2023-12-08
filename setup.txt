@@ -1,0 +1,13 @@
+setup digunakan untuk menampung semua data pada composit api lalu merturn contoh
+  setup() {
+    // cara inisiasi variabel di setup composit api
+    // note apabila data di ubah tidak dapat di ubah secara langsung karena data bukan reactive
+    const nama = ref('budi')
+    const alamat = 'bandung'
+    const datas=ref(null)
+    const ubahdata=function(){
+      datas.value.textContent='data di ubah'
+    }
+    // mendaftarkan variabel kedalam bentuk 
+    return { nama, alamat,datas,ubahdata }
+  }

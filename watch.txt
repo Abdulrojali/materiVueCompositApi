@@ -1,0 +1,2 @@
+watch digunakan untuk menampilkan perubahan saat component di gunakan
+watchEffect berfugsi saat component pertama kali di muat

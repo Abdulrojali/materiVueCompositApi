@@ -1,0 +1,16 @@
+ref pada composit api digunakan untuk menampung data variabel dan merubah data secara realtime
+contoh 
+
+ 1. memanggil reff
+import ref from 'vue'
+
+setup(){
+    const count=ref(0)
+   const tambah=function(){
+    count++
+    }
+    return {count,tambah}
+}
+<template>
+  <h1>{{count}}</h1>  // nilai count akan bertambah apabila di click
+</template>

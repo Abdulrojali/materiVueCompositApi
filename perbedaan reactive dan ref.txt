@@ -1,0 +1,33 @@
+fungsi dari reactive dan ref disini hampir sama dapat mengubah data secara realtime
+tetapi apabila data berbentuk primitf
+
+setup(){
+const nama =ref('budi')
+const nama1=reactive('ahmad')
+
+ubah1=function(){
+    nama1.textcontent='tuti' // hasilnya error karena data tidak dapat terbaca oleh reactive 
+}
+ubah=function(){
+    nama.value.textcontent='tuti' // hasilnya sukses data terubah
+}
+
+ return(nama,nama1,ubah1,ubah)
+
+kelebihan dari reactive iyalah tidak perlu menambah property seperti value untuk mengubah sebuah data
+}
+
+<template>
+<div>
+<h1>ref</h1>
+<p>nama anda {{nama}}</p>
+<button @click='ubah'>ubah</click>
+</div>
+
+<div>
+<h1>reactive</h1>
+<p>nama anda {{nama1}}</p>
+<button @click='ubah1'>ubah1</click>
+</div>
+
+</template>
